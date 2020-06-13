@@ -1,0 +1,11 @@
+@import "../../styles/variables/variables";
+
+.div-home-container {
+  .div-top-container {
+    padding: 30px;
+    .expired_warning {
+      padding: 20px;
+      box-shadow: 5px 5px 10px grey;
+    }
+  }
+}

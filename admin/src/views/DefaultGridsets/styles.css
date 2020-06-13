@@ -1,0 +1,31 @@
+.info-item input {
+    padding: 3px 5px;
+    font-size: 1em;
+}
+
+.new-user-panel {
+    margin: 30px 0;
+    border: solid 1px #e6dbdb;
+    padding: 20px;
+}
+
+.new-user-panel button {
+    display: block;
+}
+
+.edit-user-info-container {
+    margin: 30px 0;
+}
+
+.user-basic-info {
+    margin-top: 30px;
+}
+
+.info-item {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.info-item label {
+    display: block;
+}

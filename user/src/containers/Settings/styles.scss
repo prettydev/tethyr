@@ -1,0 +1,79 @@
+@import "../../styles/variables/variables";
+
+.div-settings-container {
+  background-color: #F3F7FA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .div-settings-body {
+    flex-grow: 1;
+    margin-top: 18px;
+    margin-bottom: 75px;
+    width: 1380px;
+    max-width: calc(100% - 40px) !important;
+
+
+    .div-settings-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 40px;
+  
+      div {
+        display: flex;
+        align-items: center;
+  
+        span {
+          font-size: 30px;
+          font-family: 'MPTall-Bold';
+          color: #333333;
+          margin-left: 10px;
+        }
+      }
+  
+      span {
+        font-size: $mobile-regular-font-size + 1;
+        font-family: 'MPTall-Regular';
+        color: #333333;
+      }
+    }
+
+    .div-settings-page {
+      margin-top: 120px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .div-settings-body {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      max-width: calc(100% - 46px);
+
+      .div-settings-header {
+        padding: unset;
+      }
+    }
+  }
+
+  @media (max-width: 710px) {
+    min-height: 100vh;
+    .div-settings-body {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      max-width: 100% !important;
+
+      .div-settings-header {
+        display: none;
+      }
+
+      .div-settings-menu {
+        display: none;
+      }
+
+      .div-settings-page {
+        // margin-top: unset;
+      }
+    }
+  }
+}

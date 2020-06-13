@@ -1,0 +1,212 @@
+@import "../../../styles/variables/variables";
+
+.edit-profile-container {
+  margin-top: -50px;
+  background-color: #F3F7FA;
+  transition: all .25s;
+
+  * {
+    transition: all .1s;
+
+    &.invisible {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .set-password-notification {
+    margin: 0 auto 25px;
+    max-width: 625px;
+  }
+
+  .profile-info {
+    width: 625px;
+    height: 870px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    margin: 0 auto;
+
+    &.shrink {
+      height: 580px;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: .85px solid #EAEAEA;
+      padding-bottom: 15px;
+
+      span {
+        font-size: 22px;
+        font-family: 'MPTall-Bold';
+        color: #333333;
+
+        &.clickable {
+          font-family: 'MPTall-Regular';
+          font-size: $mobile-regular-font-size;
+          color: #2D8730;
+        }
+      }
+    }
+
+    .mobile-profile-header {
+      display: none;
+    }
+
+    .password-change-button {
+      display: none;
+    }
+
+    .profile-input-field {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 20px;
+
+      span {
+        font-size: $mobile-regular-font-size + 1;
+        font-family: 'MPTall-Medium';
+        color: #333333;
+        margin-bottom: 5px;
+      }
+
+      input {
+        height: 38px;
+        font-size: $mobile-regular-font-size;
+        font-family: 'MPTall-Regular';
+        border: 1px solid #CECECE;
+        border-radius: 2px;
+        padding: 0 10px;
+      }
+    }
+
+    .profile-input-double {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .profile-input-field {
+        width: calc(50% - 5px);
+      }
+    }
+
+    .password-change-instruction {
+      line-height: 30px;
+      font-size: $mobile-regular-font-size - 1;
+      font-family: 'Lato-Regular';
+      color: #767676;
+      padding: 20px 5px 10px;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .button {
+      width: 170px;
+      height: 50px;
+      background-color: #525252;
+      border-radius: 2px;
+      font-size: $mobile-regular-font-size + 1;
+      font-family: 'MPTall-Medium';
+      color: white;
+      margin: 20px auto 0;
+
+      &.shrink {
+        transform: translateY(-290px);
+      }
+    }
+  }
+
+  @media (max-width: 710px) {
+    margin-top: unset;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    overflow-y: scroll;
+
+    .profile-info {
+      padding: unset;
+      background-color: unset;
+      border: unset;
+      height: unset !important;
+
+      .desktop {
+        display: none !important;
+      }
+
+      .profile-header {
+        display: none;
+      }
+
+      .mobile-profile-header {
+        position: relative;
+        display: block;
+        height: 58px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #EAEAEA;
+        margin-bottom: 15px;
+
+        span {
+          color: #040000;
+          font-family: 'MPTall-Regular';
+          font-size: $small-font-size + 1;
+        }
+
+        img {
+          position: absolute;
+          left: 24px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .input-group {
+        background-color: white;
+        border-top: 1px solid #EAEAEA;
+        border-bottom: 1px solid #EAEAEA;
+        padding: 10px 30px 30px;
+      }
+
+      .password-change-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px 0 24px;
+        font-size: $mobile-regular-font-size;
+        font-family: 'MPTall-Medium';
+        color: #040000;
+        background-color: white;
+        height: 58px;
+        border: .5px solid #EAEAEA;
+        margin-top: 15px;
+      }
+
+      .button {
+        width: 208px;
+        height: 51px;
+        background-color: $green-primary;
+        border-radius: 2px;
+        box-shadow: unset;
+        margin-bottom: 60px;
+        transform: unset !important;
+      }
+    }
+  }
+}

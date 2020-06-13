@@ -1,0 +1,48 @@
+.info-item input {
+    padding: 3px 5px;
+    font-size: 1em;
+}
+
+.new-platform-panel {
+    margin-bottom: 30px;
+}
+
+.new-user-panel button {
+    display: block;
+}
+
+.edit-user-info-container {
+    margin: 30px 0;
+}
+
+/* .user-basic-info {
+    margin-bottom: 30px;
+} */
+
+.info-item {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.info-item label {
+    display: block;
+}
+
+.user-cube-info {
+    margin-bottom: 30px;
+}
+
+.cube-select {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.cube-select label {
+    display: block;
+}
+
+#facebook,
+#youtube {
+    width: 400px;
+}

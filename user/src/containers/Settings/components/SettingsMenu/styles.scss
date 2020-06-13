@@ -1,0 +1,57 @@
+@import "../../../../styles/variables/variables";
+
+.settings-menu {
+  .settings-menu-regular {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: .75px solid #C6CCD1;
+  }
+
+  .settings-menu-responsive {
+    display: none;
+  }
+
+  .settings-menu-item {
+    text-align: center;
+    color: #999999;
+    height: 100%;
+    font-size: $mobile-regular-font-size;
+    font-family: 'MPTall-Medium';
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .settings-menu-item-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      max-height: 57px;
+      padding: 0 5px;
+
+      &.active {
+        color: #040000;
+        font-family: 'MPTall-Bold';
+      }
+    }
+  }
+
+  .settings-menu-item-underline  {
+    height: 3px;
+    background-color: $green-primary;
+  }
+
+  @media (max-width: 1024px) {
+    .settings-menu-regular {
+      justify-content: space-between;
+    }
+
+    .settings-menu-item {
+      margin-right: unset;
+    }
+  }
+}

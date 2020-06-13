@@ -1,0 +1,57 @@
+@import "../../styles/variables/variables";
+
+.notification-message-box {
+  position: fixed;
+  top: 0;
+  height: 48px;
+  left: 0px;
+  right: 0px;
+
+  &.black {
+    background-color: #333333;
+  }
+
+  &.red {
+    background-color: #DE4A4A;
+  }
+
+  &.green {
+    background-color: #11795E;
+  }
+
+  .notification-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 120px);
+    text-align: center;
+    font-size: $mobile-regular-font-size;
+    font-family: 'CeraPro-Regular';
+    color: white;
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  .img-close {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    height: 10px;
+  }
+
+  @media (max-width: 710px) {
+
+    .notification-message {
+      left: 40%;
+      font-size: $mobile-regular-font-size - 1;
+      text-align: left;
+    }
+
+    .img-close {
+      right: 20px;
+    }
+  }
+}

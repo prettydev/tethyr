@@ -1,0 +1,249 @@
+
+/* PlaylistHeaderBar styles */
+
+.playlistHeaderBar {
+  width: 100%;
+    background: #1b1a1a;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    z-index: 999;
+	
+    /* border-top-width: thick; */
+    /* border-right-width: thin; */
+    border-bottom-width: medium;
+    border-left-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-top-color: #FFD700;
+    border-right-color: #FFD700;
+    border-bottom-color: #FFD700;
+    border-left-color: #FFD700;
+
+  select {
+    height: 30px;
+    margin-top: 2px;
+    margin-right: 15px;
+  }
+
+  
+
+  button {
+    width: 150px;
+    margin-top: 5px;
+    height: 30px;
+    line-height: 25px;
+    background: #3d3d3d;
+    color: white;
+    margin-right: 10px;
+	 border-radius: 6px;
+  }
+
+  // button.selected {
+  //   color: white;
+  //   border: 2px solid white;
+  // }
+
+  // button.selected.action {
+  //   width: 200px;
+  // }
+
+  span {
+    color: white;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+
+  label {
+    color: white;
+  }
+
+  
+  .dropdown{
+    display: inline-block;
+    position: relative;
+    height: 40px;
+
+    span {
+      width: 150px;
+      margin-top: 5px;
+      height: 30px;
+      background: #1b1a1a;
+      color: white;
+      border: 2px solid white;
+      margin-right: 10px;
+    }
+    
+    
+  }
+
+  .dropdown > button.selected {
+    background: #1b1a1a;
+  }
+
+  .dropdownbuttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    
+    margin : 1px 0;
+    button {
+      margin : 1px 0;
+    }
+    display: none;
+
+  }
+
+  .dropdownbuttons.action {
+    width: 200px;
+    
+    button {
+      width: 200px;
+    }
+  }
+
+  
+
+  .dropdown:hover .dropdownbuttons{
+    display: flex;
+    z-index: 2;
+  }
+
+  .mainBar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    .butvideoaudioplaylist {
+      height: 35px;
+      float: left;
+    }
+
+    .imgbutdropdown {
+      height: 35px;
+      margin-top: 2px;
+    }
+
+    .cubeName {
+     color: #FFD700;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    /* font-weight: normal; */
+    /* font-size: large; */
+    // padding-right: 20px;
+    min-width: 60px;
+    }
+
+    .importBtn {
+      background: #827220;
+    /* color: black; */
+    margin-top: 0;
+    }
+
+    .searchBtn {
+      background: cyan;
+      color: black;
+      margin-top: 0;
+    }
+
+    .wikiBtn {
+  margin-top: 0;
+    border: 2px solid white;
+    background: #0e194e;
+    }
+
+    .filterBtn {
+      color: lightgrey;
+      margin: 0 5px;
+      font-size: 1.3em;
+
+      &.on {
+        color: #FFD700; 
+      }
+    }
+    
+  }
+
+  .filterBar {
+     height: 35px;
+    background: #1b1a1a;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    span {
+      color: gold;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    /* font-size: 20px; */
+    line-height: 20px;
+    padding-right: 5px;
+    }
+
+    button {
+      width: 300px;
+      height: 25px;
+      margin-top: 0;
+      color: white;
+      background: #545050;
+      border: 1px solid lightgrey;
+    }
+
+
+    .dropdown > button.selected {
+      width: 130px;
+      margin-top: 7px;
+    }
+
+    .dropdownbuttons button {
+      text-align: left;
+      width: 200px;
+    }
+    .filterBtn {
+      width: 20px;
+      margin: 3px;
+
+      &.on {
+        color: #14e65e;
+      }
+    }
+
+    .filterInput {
+      margin: auto 10px;
+      height: 25px;
+      line-height: 20px;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    label {
+      font-size: 15px;
+      line-height: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.playlistHeaderBar.disabledPlaylist {
+  pointer-events: none;
+  background: #CCC;
+  opacity: 0.5;
+} 
+
+@media (max-width: 1260px) {
+  .playlistHeaderBar {
+    .desktop-menu {
+      display: none;
+    }
+  }
+}
+
+// @media (max-width: 750px) {
+//   .playlistHeaderBar {
+    
+//   }
+// }

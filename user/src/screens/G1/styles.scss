@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+.G1 {
+  .Win1 {
+    width: calc(100% - 272px);
+  }
+  .Win1cube {
+    width: calc(100% - 272px);
+  }
+  .RightSideArea {
+    width: 272px;
+    .Cube {
+      width: 100%;
+    }
+  }
+  
+
+  .Search_content_div{
+    width: calc(100% - 272px);
+  }
+
+  #logArea {
+    height: 430px;
+  }
+}

@@ -1,0 +1,126 @@
+.videoSearch {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em; 
+
+p {
+  margin: 0; }
+
+.video-result {
+  width: 100%; }
+
+.search-content {
+  padding: 0 10px; }
+
+.search_title {
+  color: white;
+  text-decoration: underline;
+  margin: 5px 0;
+  font-size: 25px; }
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.filter-title {
+  font-size: 20px;
+  margin: 10px 0; }
+
+.filter-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto; }
+
+.filter-item {
+  display: flex;
+  align-items: center; }
+  .filter-item input[type="text"] {
+    margin-right: 10px;
+    width: 200px; }
+
+.filter-item-1 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 5;
+  display: flex;
+  align-items: center; }
+
+.video-table {
+  height: calc(100% - 60px); }
+
+.result-table {
+  width: 70%;
+  border-left: solid;
+  border-color: blue;
+  border-style: solid;
+  background: blue; }
+  h2 {
+    /*margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;*/
+    color: blue;
+    background-color: white;
+    border-right: 100%;
+    }
+    h3{
+    background: crimson;
+    padding: 2px;
+    font-weight: bold;
+    font-size: medium;
+    /* width: 100%; */
+    padding-right: 10px;
+    color: white;
+    text-transform: uppercase;
+    }
+  .result-table .ReactTable {
+    height: calc(100%);
+    padding:0px; }
+
+.video-position {
+  display: flex; }
+  .video-position input {
+    margin-left: 10px; }
+
+.video-add {
+  width: 30%;
+  background: #0b7783; 
+  width: 30%;
+  background: #3e3e3e;
+  border-left: solid;
+  border-color: #3e3e3e;
+  z-index: 998;
+  h2{
+  color: #ffd400;
+  background-color: #3e3e3e;
+  /*border-right: 100%;
+  font-size: 2rem;
+  line-height: 1.2; */
+  }
+
+}
+  .video-add .ReactTable {
+    height: calc(100% - 30px); }
+
+.video-result button.close-btn {
+  margin-top: 3px;
+  background: #3d3d3d;
+  color: grey;
+  margin-left: 3px;
+  width: 50px;
+  height: 30px; }
+
+.search-head {
+  display: flex;
+  justify-content: space-between;
+  background: blue;
+  h2{
+    text-transform: uppercase;
+  } }
+
+.reset_filter {
+  position: absolute;
+  right: 20px; }
+
+.search-result {
+  display: flex; }
+}

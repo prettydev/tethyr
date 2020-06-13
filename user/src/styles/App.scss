@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+*{
+    transition: all ease .3s;
+}
+.container-home{
+    background-image: url("../Assets/textures/backgound-home.png");
+    background-size: cover;
+}
+.white-mode.container-home{
+    background: #f8f9fb !important;
+}
+.container{
+    padding: 30px 75px;
+}
+div, body, section{
+    /* height: 100%; */
+}
+.title{
+    font-size: 28px;
+}
+.white{
+    color: white;
+}
+.white-mode .white, .white-mode .btn-open, .white-mode span.hashtag{
+    color: #1F2941 !important;
+    border-color: #1F2941 !important;
+}
+
+.b{
+    font-weight: bold;
+}
+/* Button styles **/
+.btn-success{
+    background-color: #56B05B !important;
+    border: none !important;
+    padding: 8px 18px !important;
+    height: unset !important;
+    color: white !important;
+}
+.btn-outlined{
+    background-color: transparent !important;
+    padding: 8px 18px !important;
+    height: unset !important;
+    color: white !important;
+}
+.btn-default{
+    background: transparent !important;
+    padding: 8px 13px;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  .btn-default:hover{
+      background: #80808024 !important;
+  }
+.btn-small{
+        padding: 4px 7px 4px 7px;
+}
+.btn-round{
+    border-radius: 100%;
+}
+.btn-icon{
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+
+.icon{
+    max-height: 22px;
+}
+.icon.small{
+    max-height: 12px;
+}
+.btn-small img.icon {
+    height: 12.7px;
+    vertical-align: middle;
+    margin-bottom: 2.4px;
+}
+hr.line, .hr{
+    margin: 0;
+    border-color: #D4D8DD;
+    margin-block-end: 8px;
+    margin-block-start: 8px;
+}
+h3{
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+}
+.left-col{
+    padding-right: 10px !important;
+}
+.right-col{
+    padding-left: 10px !important;
+}
+.right{
+    text-align: right !important;
+}
+.list-authors, .list-hashtags{
+    display: flex !important;
+    flex-wrap: wrap;
+}
+section.section{
+    margin-bottom: 24px !important;
+}
+span.hashtag {
+    font-size: 18px;
+    color: rgba(255,255,255,0.65);
+    margin-right: 19px;
+}
+.L-1{
+    line-height: 1 !important;
+}
+.center{
+    text-align: center;
+}
+.list-authors-cards{
+    margin-top: 16px;
+}
+.p-content{
+    display: contents !important;
+}
+.btn-open img.icon{
+    margin-left: 8px;
+}
+.btn-add-playlist img.icon{
+    margin-right: 12px;
+}
+.middle{
+    vertical-align: middle !important;
+}
+div.inline{
+    display: inline !important;
+}
+.inverse-direction{
+    transform: rotate(180deg) !important;
+}

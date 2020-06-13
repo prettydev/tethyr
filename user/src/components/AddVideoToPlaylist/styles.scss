@@ -1,0 +1,49 @@
+
+.videoImport {
+   border: solid;
+   width: 75%;
+   padding: 10px;
+   margin-left: 10px;
+   margin-top: 10px;
+   background-color: white;
+   color: black;
+   font-size: 1.2em;
+   
+   a {
+      font-size: 1.5em;
+      text-decoration: underline;
+   }
+   p{
+      font-size: 1.2em;
+   }
+   .addBtn {
+      width: 50%;
+   }
+
+   button.close-btn {
+      margin-top: 3px;
+      background: #3d3d3d;
+      color: grey;
+      margin-left: 3px;
+      width: 50px;
+      height: 30px;
+   }
+
+   .import_header {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .addWebsiteType {
+      display: flex;
+   }
+
+   .image {
+      width: 50px;
+      padding: 0 5px;
+   }
+
+   .radio_btn {
+      text-align: center;
+   }
+}

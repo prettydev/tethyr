@@ -1,0 +1,14 @@
+.info-item input {
+    padding: 3px 5px;
+    font-size: 1em;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.ReactTable .rt-td {
+    word-wrap: break-word;
+}

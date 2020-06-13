@@ -1,0 +1,91 @@
+@import "../../../../styles/variables/variables";
+
+.new-password-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  
+  @keyframes slide-up-animation {
+    from { transform: translateY(100%) }
+    to { transform: translateY(0) }
+  }
+
+  animation-name: slide-up-animation;
+  animation-duration: .25s;
+
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    border-bottom: 1px solid #EAEAEA;
+
+    span {
+      font-size: $small-font-size + 1;
+      font-family: 'MPTall-Regular';
+      color: #040000;
+    }
+
+    img {
+      position: absolute;
+      left: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  form {
+    padding: 28px 22px;
+
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      font-size: $mobile-regular-font-size;
+      color: #333333;
+      margin-bottom: 15px;
+      
+      div {
+        font-family: 'MPTall-Medium';
+        margin-bottom: 10px;
+      }
+
+      input {
+        height: 38px;
+        border-radius: 2px;
+        border: 1px solid #CECECE;
+        padding: 0 10px;
+      }
+    }
+
+    .form-instructions {
+      font-size: $mobile-regular-font-size - 1;
+      font-family: 'Lato-Regular';
+      color: #767676;
+
+      div {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 5px;
+
+        img {
+          margin-top: 7px;
+          margin-right: 10px;
+        }
+      }
+    }
+    
+    .button {
+      width: 208px;
+      height: 51px;
+      font-size: $mobile-regular-font-size + 1;
+      font-family: 'MPTall-Medium';
+      border-radius: 2px;
+      box-shadow: unset;
+      margin: 30px auto;
+    }
+  }
+}

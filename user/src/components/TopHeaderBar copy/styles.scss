@@ -1,0 +1,412 @@
+
+/* TopHeaderBar styles */
+
+.topHeaderBar {
+  height: 35px;
+  width: 100%;
+  background: #000000;
+  display: flex;
+  padding-right: 10px;
+      
+  button{
+    background: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #000000;
+    color: #e8e8e8;
+  }
+  
+  button.selected{
+    color: white;
+    border: 2px solid white;
+    background: #3d3d3d;
+  }
+
+  .logo {
+
+    .headerLogo {
+      height: 35px;
+    }
+
+    .mobileLogo {
+      height: 35px;
+      display: none;
+    }
+
+    .dropdown{
+      display: inline-block;
+      position: relative;
+      height: 40px;
+    }
+        
+    .dropdownbuttons {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+      left: 0;
+      margin : 0;
+      button {
+        margin : 0;
+      }
+      display: none;
+    }
+
+    .dropdown:hover .dropdownbuttons{
+      z-index: 999;
+      display: flex;
+    }
+  }
+
+  .login{
+    .userSpan {
+      color: #FF0;
+      background: #3d3d3d;
+      text-align: center;
+    }
+    
+    button {
+      width: 160px;
+    }
+
+    .dropdown{
+      display: inline-block;
+      position: relative;
+      height: 40px;
+    }
+  
+    .dropdownbuttons {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 160px;
+      left: 2px;
+      margin : 0;
+      
+      button {
+        margin : 0;
+        border: 1px solid grey;
+      }
+      display: none;
+    }
+  
+    .dropdown:hover .dropdownbuttons{
+      z-index: 999;
+      display: flex;
+    }
+  }
+  
+  .interface {
+    margin-left: 10px;
+    color: white;
+    line-height: 27px;
+
+    label {
+      margin-right: 10px;
+    }
+
+    button {
+      width: 220px;
+    }
+
+    .dropdown{
+      display: inline-block;
+      position: relative;
+      height: 40px;
+    }
+  
+    .dropdownbuttons {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 35px;
+      left: 2px;
+      margin : 0;
+      margin-top : 2px;
+      button {
+        margin : 0;
+        border: 1px solid grey;
+      }
+      display: none;
+    }
+    
+    .dropdownbuttons.playlist_group {
+      margin-left: -41px;
+    }
+    .dropdown:hover .dropdownbuttons{
+      z-index: 999;
+      display: flex;
+    }
+  }
+
+  .layouts {
+    margin-left: 10px;
+    color: white;
+    line-height: 27px;
+  
+    label {
+      margin-right: 10px;
+    }
+
+    .layoutBtn {
+      width: 40px;
+      height: 60px;
+      margin: 2px;
+    }
+
+    
+    
+    button {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    button {
+      width: 100px;
+    }
+
+    .dropdown{
+      display: inline-block;
+      position: relative;
+      height: 40px;
+    }
+  
+    .dropdownbuttons {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 480px;
+      left: -190px;
+      button {
+        margin : 5px 0;
+      }
+      display: none;
+    }
+  
+    .dropdown:hover .dropdownbuttons{
+      z-index: 999;
+      display: flex;
+    }
+
+    .selectionSpan {
+      position: absolute;
+      width: 40px;
+      height: 60px;
+      background: #10af3294;
+      top: 2px;
+      border-radius: 3px;
+    }
+  }
+    
+  .smalllayout {
+    margin-left: 10px;
+    color: white;
+    line-height: 27px;
+
+    label {
+      margin-right: 10px;
+    }
+
+    button {
+      width: 180px;
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+    .dropdown{
+      display: inline-block;
+      position: relative;
+      height: 40px;
+    }
+  
+    .dropdownbuttons {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 35px;
+      left: 2px;
+      margin : 0;
+      margin-top : 2px;
+      button {
+        margin : 0;
+        border: 1px solid grey;
+      }
+      display: none;
+    }
+  
+    .dropdown:hover .dropdownbuttons{
+      z-index: 999;
+      display: flex;
+    }
+  }
+    
+  .selectGridset {
+    margin-left: 10px;
+    color: white;
+    line-height: 30px;
+  
+    label {
+      margin-right: 10px;
+    }
+    select {
+      height: 30px;
+      margin-top: 2px;
+    }
+  }
+
+  .topSelectPlaylist {
+    margin-left: 10px;
+    color: white;
+    line-height: 30px;
+  
+    label {
+      margin-right: 10px;
+    }
+    select {
+      height: 30px;
+      margin-top: 2px;
+    }
+
+    .dropdown{
+      display: inline-block;
+      position: relative;
+      height: 40px;
+    }
+
+    .dropdownbuttons {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+      left: -100%;
+      margin : 5px 0;
+      button {
+        margin : 5px 0;
+      }
+      display: none;
+    }
+  
+    .dropdown:hover .dropdownbuttons{
+      z-index: 999;
+      display: flex;
+    }
+  }
+ 
+  .control {
+    margin-left: 10px;
+  
+    button {
+      padding-left: 5px;
+  padding-right: 5px;
+  line-height: 25px;
+  margin-top: 2px;
+  background: #3d3d3d;
+  /* color: #696868; */
+    }
+  
+    button.playall.selected {
+    /* color: lightgreen; */
+  border: 2px solid #3d3d3d;
+  background: lime;
+  color: #000000;
+  font-weight: bold;
+    }
+  
+    button.pauseall.selected {
+    color: black;
+  border: 2px solid #3d3d3d;
+  background: #e40303;
+  color: #000000;
+  font-weight: bold;
+    }
+  }
+
+  .m1-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobile-menu {
+    flex-direction: row;
+    display: none;
+  }
+
+  .left-menu {
+    display:flex;
+    flex: 2;
+  }
+
+  .layout-menu {
+    display:flex;
+    flex: 1;
+  }
+
+  .playlist_group_btn {
+    width: 30px;
+    margin-top: 2.5px;
+  }
+
+  @media (max-width: 1400px) {
+    label {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .mobile-menu {
+      display: flex;
+    }
+    .left-menu, .layout-menu {
+      display: none;
+    }
+    .control {
+      display: none;
+    }
+    .control.mobile-menu {
+      display: flex;
+      button {
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+    }
+    .logo {
+      .headerLogo {
+        display: none;
+      }
+      .mobileLogo {
+        display: block;
+      }
+    }    
+    .mobile-menu .layouts {
+      display: none;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .selectGridset {
+      display: none;
+    }
+    .mobile-menu .layouts {
+      display: block;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .interface {
+      margin-left: 5px;
+    }
+    .mobile-menu {
+      .smalllayout {
+        margin-left: 5px;
+      }
+      .layouts {
+        margin-left: 5px;
+      }
+    }
+    .control {
+      margin-left: 5px;
+    }
+  }
+}

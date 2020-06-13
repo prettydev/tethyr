@@ -1,0 +1,21 @@
+.ReactTable .rt-thead .rt-th:last-child {
+    text-align: left !important;
+}
+.info-item.settingBtn {
+    display: flex;
+}
+.nav {
+    justify-content: left;
+}
+p.navbar-title {
+    font-weight: bold;
+    margin-right: 5px !important;
+}
+p.navbar-item {
+    margin-right: 5px !important;
+    color: black;
+}
+p.navbar-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

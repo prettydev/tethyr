@@ -1,0 +1,16 @@
+@import "../../styles/variables/variables";
+
+.div-modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $bg-modal;
+  z-index: $zindex-modal;
+  overflow-y: scroll;
+}
+
+.div-modal-container-dark {
+  background-color: $dark-bg-modal;
+}

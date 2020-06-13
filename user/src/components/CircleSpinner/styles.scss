@@ -1,0 +1,26 @@
+.spinner:after {
+  background-image: url('https://uploads.codesandbox.io/uploads/user/50ab5596-c780-436a-b507-f4f66248c2ac/LxK9-spinner.png');
+  -webkit-animation: rotate 0.75s linear 0s infinite;
+  animation: rotate 0.75s linear 0s infinite;
+  content: "";
+  position: absolute;
+  margin-left: -14px;
+  margin-top: -14px;
+  height: 30px;
+  width: 30px;
+}
+
+@keyframes rotate {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}

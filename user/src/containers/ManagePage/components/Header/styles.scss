@@ -1,0 +1,325 @@
+@import "../../../../styles/variables/variables";
+
+
+.app-header {
+  transition: all ease-out 0.1s;
+  .container {
+    position: relative;
+    max-width: 1404px;
+    height: 78px;
+    padding: 0 20px;
+  }
+
+  .img-logo {
+    float: left;
+    height: 65px;
+    margin-top: 6px;
+  }
+
+  .header-title {
+    float: left;
+    height: 36px;
+    margin-top: 21px;
+    font-size: $small-font-size + 1;
+    font-family: 'MPTall-Medium';
+    color: #040000;
+  }
+
+  .span-pricing-status {
+    display: none;
+  }
+
+  .img-flow {
+    position: absolute;
+    height: 45px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .img-min-flow {
+    display: none;
+    position: absolute;
+    height: 35px;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .div-help-center-banner {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-top: 24px;
+    margin-left: 40px;
+
+    .div-separator {
+      width: 1px;
+      height: 45px;
+      background-color: $text-primary;
+      margin-right: 60px;
+    }
+    .div-help-center-title {
+      font-family: 'Montserrat-Bold';
+      font-size: $small-font-size;
+    }
+  }
+
+  .div-links {
+    float: left;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    height: 100%;
+    margin-left: 20px;
+
+    span {
+      color: #58595E;
+      font-size: $mobile-regular-font-size + 1;
+      font-family: 'MPTall-Header';
+      margin: 0 16px;
+
+      &:hover {
+        color: #3B9A0A;
+      }
+    }
+
+    .div-link-selected {
+      color: #3B9A0A;
+    }
+  }
+
+  .div-buttons {
+    display: flex;
+    float: right;
+    align-items: center;
+    margin-top: 21px;
+    height: 36px;
+
+    .desktop-buttons{
+      display: flex;
+      align-items: center;
+    }
+
+    .div-login {
+      width: 90px;
+      height: 36px;
+      margin: 0 10px;
+      line-height: 36px;
+      text-align: center;
+      font-family: 'MPTall-Header';
+      font-size: $mobile-regular-font-size + 1;
+      text-transform: uppercase;
+      color: #585E58;
+    }
+
+    .button {
+      height: 45px;
+      width: 114px;
+      border-radius: 2px;
+      box-shadow: $shadow-primary;
+      font-size: $mobile-regular-font-size + 2;
+      font-family: 'MPTall-Bold';
+    }
+
+    .div-cart {
+      display: none;
+    }
+  }
+
+  &.app-header-transparent {
+    position: absolute !important;
+    background-color: transparent !important;
+    border-bottom: unset !important;
+
+    .img-logo {
+      height: 53px;
+    }
+
+    .div-login {
+      color: white !important;
+    }
+
+    .div-links {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    .img-flow {
+      left: unset;
+      right: 40px;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .div-links {
+      margin-left: 30px;
+      span {
+        margin: 0 10px;
+      }
+    }
+
+    .div-buttons {
+      margin-top: 20px;
+      height: 36px;
+
+      .div-login {
+        width: 100px;
+        height: 36px;
+        line-height: 36px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .img-flow {
+      display: none;
+    }
+
+    .img-min-flow {
+      display: block;
+    }
+
+    .div-help-center-banner {
+      margin-left: 30px;
+      .div-separator {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    .div-links {
+      display: none;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .div-buttons .div-cart {
+      display: flex;
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .div-help-center-banner {
+      display: none;
+    }
+  }
+
+  @media (max-width: 710px) {
+    .container {
+      position: unset;
+      max-width: 100% !important;
+      height: 20px !important;
+    }
+
+    .img-logo, .header-title {
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+
+      &.signup-logo {
+        display: none;
+      }
+    }
+
+    .header-title {
+      margin-top: 16px;
+    }
+
+    .span-pricing-status {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: $mobile-regular-font-size + 1;
+      font-family: 'Montserrat-SemiBold';
+    }
+
+    .img-min-flow {
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      height: 32px;
+    }
+
+    .div-help-center-banner {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 20px;
+  
+      .div-separator {
+        height: 20px;
+        margin-right: 20px;
+      }
+      .div-help-center-title {
+        font-size: $mobile-regular-font-size;
+        font-family: 'Montserrat-Medium';
+      }
+    }
+
+    .div-buttons {
+      margin-top: 18px;
+      height: 25px;
+      float: none;
+      justify-content: space-between;
+      
+      .dropdown {
+        .settings-dropdown-trigger span {
+          font-size: $mobile-regular-font-size;
+        }
+
+        .settings-dropdown-trigger.mobile img{
+          height: 25px;
+        }
+      }
+      
+      .div-login {
+        width: 60px;
+        height: 22px;
+        line-height: 25px;
+      }
+
+      .button {
+        height: 35px;
+        width: 100px;
+      }
+
+      .div-cart {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    .div-help-center-banner {
+      display: none;
+    }
+  }
+
+  @media (max-width: 414px) {
+    .div-buttons {
+      .dropdown {
+        .settings-dropdown-trigger span {
+          font-size: $mobile-small-font-size;
+        }
+        .settings-dropdown-trigger img {
+          height: 15px;
+        }
+        .settings-dropdown-trigger.mobile img{
+          height: 25px;
+        }
+      }
+
+      .button {
+        height: 30px;
+        width: 80px;
+      }
+    }
+  }
+}

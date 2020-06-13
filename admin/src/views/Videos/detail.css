@@ -1,0 +1,114 @@
+.new-video label {
+    color: #3C4858;
+}
+
+.new-video button {
+    margin-right: 20px;
+}
+
+.add-link-box .instruction {
+    font-style: italic;
+    display: block;
+    margin: 10px 0;
+}
+
+.add-link-box input {
+    width: 600px;
+    height: 30px;
+    font-size: 1em;
+    padding: 0 15px;
+}
+
+.link-box {
+    display: flex;
+    align-items: center;
+}
+
+.link-box input {
+    margin-right: 8px;
+}
+
+.error-message {
+    color: red;
+    margin: 10px;
+    font-size: .9em;
+}
+
+.video-edit-box,
+.video-checkboxes {
+    margin: 30px 0;
+}
+
+.video-info-item {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.video-info-item label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: .9em;
+}
+
+.video-info-item input {
+    padding: 7px 10px;
+    font-size: 1em;
+}
+
+.video-info-item .gsvn {
+    width: 320px;
+}
+
+.video-info-item .video_type {
+    width: 120px;
+}
+
+.video-info-item .video_id {
+    width: 120px;
+}
+
+.video-info-item .interface_link {
+    width: 400px;
+}
+
+.video-info-item .video_title,
+.video-info-item .description {
+    width: 500px;
+}
+
+.video-info-item .video_author {
+    width: 200px;
+}
+
+.video-info-item .video_length {
+    width: 200px;
+}
+
+.video-checkboxes label {
+    font-size: 1em;
+    margin-right: 30px;
+}
+
+.video-save-btn {
+    font-size: 1em;
+}
+
+.select-playlist-box {
+    margin: 30px 0;
+}
+
+.select-playlist-box select,
+.select-playlist-box button {
+    font-size: 1em;
+    margin-right: 20px;
+}
+
+.assigned-playlists {
+    margin: 50px 0 30px 0;
+}
+
+.assigned-playlists .title {
+    font-weight: bold;
+    font-size: 1.2em;
+}

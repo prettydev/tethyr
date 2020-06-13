@@ -1,0 +1,31 @@
+
+
+.reset-password-container {
+  min-height: 100vh;
+  background-color: #F1F1F1;
+  padding-bottom: 1px;
+
+  .div-reset-password-form {
+    position: relative;
+    display: flex;
+    margin: 50px 30px 90px 30px;
+    padding-top: 200px;
+
+    .container {
+      max-width: 720px !important;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    padding-bottom: 1px;
+  }
+
+  @media (max-width: 710px) {
+    background-color: #FAFBFD;
+
+    .div-reset-password-form {
+      padding-top: 40px;
+      margin: unset;
+    }
+  }
+}

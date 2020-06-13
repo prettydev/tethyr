@@ -1,0 +1,71 @@
+.M4 {
+    .RightSideArea {
+        // position: fixed;
+        height: calc(100% - 70px);
+        left: 0px;
+        top: 35px;
+        width: 100%;
+        &.short {
+            height: calc(75% - 70px);
+        }
+
+        &.medium {
+            height: calc(50% - 70px);
+        }
+
+        &.full {
+            height: calc(25% - 70px);
+        }
+
+        .CubeRow {
+            height: 50%;
+
+            .Cube {
+                height: auto;
+
+                .MainBar {
+                    width: 100%;
+                    height: calc(100% - 20px);
+
+                    .VideoBox {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .ButtonBar {
+                    display: flex;
+                    // height: auto;
+                    // min-height: 20px;
+                    height: 20px;
+                    padding-right: 2%;
+
+                    img:nth-child(1), img:nth-child(2), img:nth-child(3) {
+                        flex: 65;
+                        min-width: 40px;
+                        height: auto;
+                    }
+        
+                    img:nth-child(4), img:nth-child(5), img:nth-child(6) {
+                        flex: 14;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .WinCube {
+            width: 100%;
+            height: 100%;
+        }
+
+        .AdCube {
+            .imgBtn {
+                width: 100%;
+            }
+        }
+
+    }
+
+    
+}

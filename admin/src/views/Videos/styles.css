@@ -1,0 +1,46 @@
+h4 {
+    text-align: center;
+}
+
+.bulk-upload-panel {
+    border: 1px dashed black;
+    width: 750px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.bulk-upload-panel p {
+    text-align: center;
+}
+
+.bulk-upload-panel input {
+    width: 600px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.videos-page .filter-box {
+    margin: 30px 0 0;
+}
+
+.filter-all-input {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.filter-box .filter-item {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.filter-item span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.filter-item select {
+    font-size: 1em;
+}

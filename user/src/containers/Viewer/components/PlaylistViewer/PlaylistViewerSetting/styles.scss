@@ -1,0 +1,187 @@
+
+/* SettingsBar styles */
+
+.settingsBar {
+  position: fixed;
+    height: 35px;
+    top: 475px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    padding: 0 10px;
+    z-index: 999;
+    /* border-bottom: solid;*/
+	
+
+  button {
+    width: 70px;
+    margin-top: 3px;
+    height: 30px;
+    background: #3d3d3d;
+    color: grey;
+    margin-left: 15px;
+  }
+
+  button.selected {
+    color: white;
+    border: 2px solid white;
+  }
+
+  span {
+     color: white;
+    line-height: 25px;
+    vertical-align: middle;
+    /* font-size: 14px; */
+  }
+
+  label {
+    color: white;
+  }
+
+  .narrow-menu, .medium-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  .settingsImageBtn {
+    height: 35px;
+    width: 35px;
+  }
+
+  .dropdown{
+    display: inline-block;
+    position: relative;
+    height: 40px;
+  }
+
+  .dropdownbuttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    left: 0;
+    margin : 0;
+    button {
+      margin : 0;
+    }
+    display: none;
+
+    label {
+      height: 30px;
+      background: #a9a4a4;
+      color: #060606;
+      width: 80px;
+      text-align: center;
+      margin: 0;
+      padding-top: 5px;
+      display: none;
+    }
+  }
+
+  .imagedropdownbuttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    left: 0;
+    margin : 0;
+    button {
+      margin : 0;
+    }
+    display: none;
+  }
+
+  
+
+  .dropdown:hover .dropdownbuttons, .dropdown:hover .imagedropdownbuttons{
+    display: flex;
+  }
+  .imagedropdownbuttons.hide {
+    top: -138%;
+  }
+}
+
+.settingsBar.hide {
+  top: calc(100% - 35px);
+}
+
+.settingsBar.short {
+  top: calc(75% - 35px);
+}
+
+.settingsBar.medium {
+  top: calc(50% - 35px);
+}
+
+.settingsBar.tall {
+  top: calc(25% - 35px);
+}
+
+.settingsBar.full {
+  top: calc(10% - 35px);
+}
+
+  
+@media (max-width: 1260px) {
+  .settingsBar {
+    .desktop-menu {
+      display: none;
+    }
+    .medium-menu {
+      display: block;
+      button {
+        width: 80px;
+      }
+    }
+
+    
+
+    .dropdown.hide{
+      height: 80px;
+    }
+    
+    .dropdownbuttons.hide {
+      top: -185%;
+    }
+    
+
+    .medium-menu.five-items .dropdownbuttons.hide {
+      top: -185%;
+    }
+
+    
+  
+  }
+}
+
+@media (max-width: 750px) {
+  .settingsBar {
+    .medium-menu {
+      display: none;
+    }
+    .narrow-menu {
+      display: block;
+      button {
+        width: 80px;
+      }
+    }
+    label {
+      display: none;
+    }
+    .dropdownbuttons{
+      label {
+        display: block;
+      }
+    }
+
+    .dropdownbuttons.hide {
+      top: -185%;
+    }
+    .medium-menu.five-items .dropdownbuttons.hide {
+      top: -220%;
+    }
+  }
+}

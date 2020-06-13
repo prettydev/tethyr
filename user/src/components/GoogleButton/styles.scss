@@ -1,0 +1,32 @@
+@import "../../styles/variables/variables";
+
+.google-button {
+  button {
+    position: relative;
+    width: 100%;
+    height: 53px;
+    box-shadow: unset !important;
+    border-radius: 4px !important;
+    display: flex;
+    justify-content: center;
+    background-color: #4285F6 !important;
+
+    div {
+      display: none;
+    }
+
+    img {
+      position: absolute;
+      left: 9%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    span {
+      font-size: $mobile-regular-font-size !important;
+      font-family: 'Roboto-Medium' !important;
+      color: white;
+      padding: unset !important;
+    }
+  }
+}

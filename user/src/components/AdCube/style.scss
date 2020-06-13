@@ -1,0 +1,33 @@
+.AdCube {
+    .Tim {
+        position: relative;
+        min-width: 6px;
+        background-size: 6px 144px;
+    }
+    .ButtonBar {
+        display: flex;
+        margin-right: 0;
+        width: 269px;
+    }
+    .previewBtn {
+        margin-left: 0;
+        width: 22px;
+    }
+
+    .spacer {
+        flex: 1;
+    }
+}
+
+@keyframes timer {
+    0% {
+        height: 100%;
+        top: 0%;
+        background-position-y: 0;
+    }
+    100% {
+        height: 0;
+        top: 100%;
+        background-position-y: -144px;
+    }
+}

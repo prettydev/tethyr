@@ -1,0 +1,173 @@
+@import "../../../styles/variables/variables";
+
+.signup-container {
+  background-color: #FAFAFA;
+  margin-top: -50px;
+
+  .div-signup-form {
+    position: relative;
+    display: flex;
+    padding-top: 70px;
+    margin: 100px 30px 0 30px;
+    padding-bottom: 90px;
+
+    .container {
+      max-width: 360px !important;
+
+      .auth-form {
+        background-color: white;
+        border: 1px solid #CCCCCC;
+        padding: 30px 18px 25px;
+        height: 480px;
+        transition: all .25s;
+      
+        &.signup-form {
+          height: 675px;
+        }
+      
+        &.logged {
+          height: 140px;
+        }
+      
+        * {
+          transition: all .25s;
+        }
+      
+        .auth-form-header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+          .auth-form-title {
+            font-size: 28px;
+            font-family: 'MPTall-Bold';
+            color: #303236;
+            margin-bottom: 5px;
+          }
+      
+          .auth-form-redirect {
+            font-size: $mobile-regular-font-size;
+            font-family: 'MPTall-Regular';
+            color: #808080;
+            margin-bottom: 20px;
+      
+            span {
+              color: #196D1C;
+            }
+          }
+      
+          .google-button {
+            width: 100%;
+      
+            button {
+              height: 50px;
+            }
+          }
+        }
+      
+        .auth-form-separator {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+      
+          div {
+            height: 1px;
+            background-color: #E3E3E3;
+            flex-grow: 1;
+          }
+      
+          span {
+            margin: 0 5px;
+            font-size: $mobile-regular-font-size - 2;
+            font-family: 'MPTall-Regular';
+            color: $text-light-gray;
+          }
+        }
+      
+        .auth-form-inputs {
+          .auth-form-input {
+            margin-top: 9px;
+      
+            .auth-form-input-name {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-size: $mobile-regular-font-size + 1;
+              font-family: 'MPTall-Medium';
+              color: #303236;
+              margin-bottom: 5px;
+      
+              a {
+                color: $green-secondary;
+                font-family: 'MPTall-Regular';
+              }
+            }
+      
+            input {
+              width: 100%;
+              height: 40px;
+              margin-top: 5px;
+              padding: 0 10px;
+              border: 1px solid #CCCCCC;
+              border-radius: 1px;
+              font-size: $mobile-regular-font-size - 1;
+              caret-color: $green-primary;
+            }
+      
+            input:focus {
+              border: 1px solid $green-primary;
+            }
+          }
+      
+          .btn-continue {
+            margin-top: 9px;
+            width: 100%;
+            height: 46px;
+            font-size: $mobile-regular-font-size + 1;
+            font-family: 'MPTall-Medium';
+            border-radius: 1px;
+            border: .75px solid $green-secondary;
+            box-shadow: unset;
+          }
+      
+          .auth-form-double-input {
+            display: flex;
+            justify-content: space-between;
+            
+            .auth-form-input {
+              width: calc(50% - 4px);
+            }
+          }
+        }
+      
+        .auth-form-footer {
+          width: 270px;
+          margin: 15px auto 0;
+          text-align: center;
+          font-size: $mobile-regular-font-size - 1;
+          font-family: 'MPTall-Regular';
+          color: #4D4D4D;
+          line-height: 22px;
+      
+          a {
+            color: #008F96;
+            text-decoration: underline;
+          }
+        }
+      
+        @media (max-width: 710px) {
+          box-shadow: unset;
+          border: unset;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 710px) {
+    .div-signup-form {
+      padding-top: 90px;
+      margin: unset;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.external-accounts-container {
+  margin-top: -50px;
+}
+
+.external-accounts-content {
+  width: 625px;
+  background: white;
+  border: 1px solid #EAEAEA;
+  border-radius: 2px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.external-accounts-title {
+  font-size: 22px;
+  font-family: 'MPTall-Bold';
+  color: #333333;
+  padding-bottom: 15px;
+  border-bottom: .85px solid #EAEAEA;
+}
+
+.external-accounts-buttons {
+  padding-top: 10px;
+}
+
+.external-accounts-row {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  & + .external-accounts-row {
+    border-top: 1px dashed #EAEAEA;
+  }
+}
+
+.external-accounts-main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.external-accounts-logo {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  transition: .3s;
+  width: 170px;
+  height: 50px;
+  border-radius: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  cursor: pointer;
+}
+
+.external-accounts-facebook {
+  background-color: white;
+  background-image: url('~assets/images/external_accounts/facebook.png');
+}
+
+.external-accounts-youtube {
+  background-color: white;
+  background-image: url('~assets/images/external_accounts/youtube.png');
+}
+
+.external-accounts-twitch {
+  background-size: auto 75%;
+  background-color: #9145ff;
+  background-image: url('~assets/images/external_accounts/twitch.png');
+}
+
+.external-accounts-dailymotion {
+  background-color: #0063db;
+  background-image: url('~assets/images/external_accounts/dailymotion.png');
+}
+
+.external-accounts-vimeo {
+  background-color: white;
+  background-image: url('~assets/images/external_accounts/vimeo.png');
+}
+
+.external-accounts-username {
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: 'MPTall-Medium';
+}
+
+.external-accounts-button {
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: 'MPTall-Medium';
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  height: 36px;
+  width: 100px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.external-accounts-button-connect {
+  color: #389538;
+}
+
+.external-accounts-error {
+  color: firebrick;
+  padding: 20px 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+}

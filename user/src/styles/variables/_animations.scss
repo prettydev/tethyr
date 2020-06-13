@@ -1,0 +1,16 @@
+$transition-primary: all ease-out 0.1s;
+
+@keyframes dropdown-animation {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@keyframes dropdown-fade-animation {
+  from { transform: scaleY(0); opacity: 0; }
+  to { transform: scaleY(1); opacity: 1; }
+}
+
+@keyframes slide-animation {
+  from { transform: translateX(-325px); opacity: 0; }
+  to { transform: translateX(0px); opacity: 1; }
+}

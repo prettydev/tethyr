@@ -1,0 +1,25 @@
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: #9ad3de;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    color: black;
+    text-shadow: 0 0 1px white;
+}
+
+.sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .active {
+    background-color: rgba(0, 0, 0, 0.1);
+}

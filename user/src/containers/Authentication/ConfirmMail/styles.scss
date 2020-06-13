@@ -1,0 +1,26 @@
+@import "../../../styles/variables/variables";
+
+.confirm-mail-container {
+  background-color: #FAFAFA;
+  margin-top: -50px;
+
+  .div-confirm-mail-form {
+    position: relative;
+    display: flex;
+    padding-top: 70px;
+    margin: 100px 30px 0 30px;
+    padding-bottom: 90px;
+    height: 400px;
+
+    .container {
+      max-width: 500px !important;
+    }
+  }
+
+  @media (max-width: 710px) {
+    .div-signup-form {
+      padding-top: 90px;
+      margin: unset;
+    }
+  }
+}

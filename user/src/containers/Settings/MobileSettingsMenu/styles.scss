@@ -1,0 +1,79 @@
+@import "../../../styles/variables/variables";
+
+.mobile-settings-menu {
+  margin-top: -120px;
+
+  .header {
+    background-color: white;
+    border-bottom: 1px solid #EAEAEA;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 18px 0;
+    margin-bottom: 8px;
+
+    .account-name {
+      width: 64px;
+      height: 64px;
+      border-radius: 32px;
+      background-color: #D5D9E4;
+      font-size: 25px;
+      font-family: 'Montserrat-Bold';
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 64px;
+    }
+
+    a {
+      color: #3C8A1B;
+      margin-top: 9px;
+      font-size: $mobile-regular-font-size;
+      font-family: 'MPTall-Regular';
+    }
+  }
+
+  .menu-group {
+    background-color: white;
+    border-top: .5px solid #EAEAEA;
+
+    .menu-item {
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: .5px solid #EAEAEA;
+      padding: 0 7px 0 24px;
+
+      span {
+        font-size: $mobile-regular-font-size;
+        font-family: 'MPTall-Medium';
+        color: #040000;
+
+        &.bold {
+          font-family: 'MPTall-Bold';
+          color: #2D8730;
+        }
+        a {
+          color: #040000;
+        }
+      }
+
+      
+    }
+
+    &.refer {
+      margin: 15px 0;
+    }
+  }
+
+  .separator {
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+    font-family: 'Brandon-Medium';
+    color: #999999;
+    padding: 0 24px;
+  }
+}

@@ -1,0 +1,117 @@
+@import "./variables/variables";
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+button, button:focus, select {
+  outline: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+input, textarea {
+  // outline: none;
+  // border: none;
+  // -webkit-appearance: none;
+  font-family: Arial, Helvetica, sans-serif !important;  
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #FFF inset;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #D0D0D0;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #D0D0D0;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #D0D0D0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.clickable {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+
+// Override Bootstrap
+.container {
+  padding: 0;
+
+  @media (max-width: 710px) {
+    max-width: calc(100% - 60px) !important;
+  }
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#facebook {
+  background-image: url('../assets/images/facebook_highlight.svg');
+  background-image: url('../assets/images/facebook.svg');
+
+  &:hover {
+    background-image: url('../assets/images/facebook_highlight.svg');
+  }
+}
+
+#twitter {
+  background-image: url('../assets/images/twitter_highlight.svg');
+  background-image: url('../assets/images/twitter.svg');
+
+  &:hover {
+    background-image: url('../assets/images/twitter_highlight.svg');
+  }
+}
+
+#instagram {
+  background-image: url('../assets/images/instagram_highlight.svg');
+  background-image: url('../assets/images/instagram.svg');
+
+  &:hover {
+    background-image: url('../assets/images/instagram_highlight.svg');
+  }
+}

@@ -1,0 +1,65 @@
+/**
+** Mobile size
+*/
+@media (max-width: 767px) {
+  /** Commom-begin */
+  .container {
+    padding: 30px 15px !important;
+  }
+  .left-col {
+    padding-right: 0px !important;
+  }
+
+  /** Common-end **/
+
+  /** navbar-begin */
+  .nav-header.ant-layout-header {
+    padding: 0 19px !important;
+  }
+  .logo-nav {
+    text-align: center !important;
+    border: none !important;
+  }
+  .nav-header.ant-layout-header .ant-avatar {
+    position: absolute;
+    top: 13px;
+    right: 0;
+  }
+  div.toggle-container {
+    position: absolute;
+    top: -136px;
+    z-index: 1;
+    right: 52px;
+  }
+  /** /navbar-end */
+
+  
+  /** home-page-content-begin */
+  .btn-open {
+    width: 42% !important;
+  }
+  .btn-add-playlist {
+    width: 51% !important;
+  }
+  .btns-top-right {
+    margin-bottom: 16px !important;
+  }
+
+  /* cards-begin */
+  div.ant-card-body {
+    padding: 20px 14px !important;
+  }
+  div.ant-card-body .card-title .icon {
+    margin-right: 14px !important;
+  }
+  div.card-content {
+    margin-top: 19px !important;
+  }
+  .card-footer {
+    display: none !important;
+  }
+
+  /** /cards-end */
+
+  /** /home-page-content-begin */
+}

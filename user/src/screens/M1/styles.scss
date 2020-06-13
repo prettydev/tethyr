@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+.M1 {
+  .selectGridset {
+    display: none;
+  }
+
+  .selectGridsetMobile {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 35px;
+    color: white;
+    line-height: 30px;
+    background: #3d3d3d;
+    margin-top: 5px;
+
+    label {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    select {
+      height: 30px;
+      margin-top: 2px;
+      width: calc(100% - 143px);
+      border: 1px;
+    }
+  }
+
+  .selectPlaylist {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    height: 35px;
+    color: white;
+    line-height: 30px;
+    background: #3d3d3d;
+    margin-top: 5px;
+
+    label {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    select {
+      height: 30px;
+      margin-top: 2px;
+      width: calc(100% - 93px);
+      border: 1px;
+    }
+  }
+  
+
+  .MobilePlayer {
+    
+      position: absolute;
+      top: 105px;
+      overflow: hidden;
+      height: calc(50% - 104px);
+      width: 100%;
+      left: 0px;
+      background-color: white;
+      background-image: -webkit-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+      background-image: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
+
+      .MobileVideoBox {
+        width: 100%;
+        height: 100%;
+    
+        .WinCube {
+          width: 100%;
+          height: 100%;
+        }
+      }
+  }
+  
+  .MobilePlayer.Collapsed {
+    height: calc(100% - 120px - 138px);
+  }
+
+  .playButton {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 35px;
+    background: #3d3d3d;
+    line-height: 30px;
+    text-align: center;
+
+    button {
+      background: #3d3d3d;
+      color: white;
+      width: 250px;
+      line-height: 28px;
+    }
+  }
+
+  .prevPlayButton {
+    top: 120px;
+  }
+
+  .nextPlayButton {
+    top: 50%;
+  }
+
+  .nextPlayButton.Collapsed {
+    top: calc(100% - 153px);
+  }
+
+  .collapseBtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+  }
+  
+  .MobilePlaylist {
+    position: fixed;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 3em;
+    margin: 0.1em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 0px;
+    width: 100%;
+    top: calc(50% + 34px);
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .MobilePlaylist.Collapsed {
+    top: calc( 100% - 119px);
+  }
+
+  .swiping {
+    border: 5px solid red;
+  }
+
+  .prevnextBtn {
+    height: 35px;
+  }
+}
